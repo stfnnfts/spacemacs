@@ -244,6 +244,7 @@
     :init
     (progn
       (add-hook 'python-mode-hook 'sphinx-doc-mode)
+      (spacemacs|diminish sphinx-doc-mode " 🅂" " [S]")
       (spacemacs/declare-prefix-for-mode 'python-mode "mS" "sphinx-doc")
       (spacemacs/set-leader-keys-for-major-mode 'python-mode
         "Se" 'sphinx-doc-mode
